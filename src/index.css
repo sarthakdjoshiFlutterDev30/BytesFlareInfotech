@@ -1,0 +1,249 @@
+/* eslint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom design system */
+
+/* Tailwind directives removed for plain CSS compatibility */
+
+/* Bytesflare Infotech Design System - Professional IT Solutions Brand
+All colors MUST be HSL for proper design token usage.
+*/
+
+@layer base {
+  :root {
+    /* Brand Colors - Professional Tech Blue Palette */
+    --background: 0 0% 100%;
+    --foreground: 220 27% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 27% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 27% 8%;
+
+    --primary: 214 100% 15%; /* Deep tech blue */
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 214 100% 25%;
+    --primary-dark: 214 100% 8%;
+
+    --secondary: 220 15% 96%;
+    --secondary-foreground: 220 27% 15%;
+
+    --muted: 220 15% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 35 100% 55%; /* Innovation orange */
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 35 100% 65%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 214 100% 15%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(214 100% 15%), hsl(214 100% 25%));
+    --gradient-hero: linear-gradient(135deg, hsl(214 100% 8%) 0%, hsl(214 100% 15%) 50%, hsl(214 100% 20%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(35 100% 55%), hsl(35 100% 65%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(220 15% 98%));
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(220 27% 8% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(220 27% 8% / 0.1), 0 2px 4px -1px hsl(220 27% 8% / 0.06);
+    --shadow-lg: 0 10px 15px -3px hsl(220 27% 8% / 0.1), 0 4px 6px -2px hsl(220 27% 8% / 0.05);
+    --shadow-xl: 0 20px 25px -5px hsl(220 27% 8% / 0.1), 0 10px 10px -5px hsl(220 27% 8% / 0.04);
+    --shadow-glow: 0 0 40px hsl(214 100% 15% / 0.3);
+    --shadow-accent-glow: 0 0 30px hsl(35 100% 55% / 0.4);
+
+    /* Typography */
+    --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-[var(--font-body)];
+  }
+
+  /* Improve text selection and default link styles */
+  ::selection {
+    background: hsl(var(--accent) / 0.2);
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  /* Headings: tighter tracking and stronger weights */
+  h1 { @apply font-[var(--font-heading)] font-extrabold tracking-tight; }
+  h2 { @apply font-[var(--font-heading)] font-bold tracking-tight; }
+  h3 { @apply font-[var(--font-heading)] font-semibold tracking-tight; }
+}
+
+@layer components {
+  /* Force white text for all descendants inside footer */
+  .footer, .footer * { color: #ffffff; }
+  /* Hero Section Styles */
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Card Hover Effects */
+  .service-card {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-2;
+    box-shadow: var(--shadow-md);
+  }
+
+  .service-card:hover {
+    box-shadow: var(--shadow-xl);
+  }
+
+  /* Animations */
+  .fade-in-up {
+    @apply animate-[fadeInUp_0.6s_ease-out_forwards];
+  }
+
+  .fade-in {
+    @apply animate-[fadeIn_0.8s_ease-out_forwards];
+  }
+
+  .bounce-in {
+    @apply animate-[bounceIn_0.6s_ease-out_forwards];
+  }
+
+  /* Button Variants */
+  .btn-hero {
+    @apply bg-gradient-to-r from-primary to-primary-light text-primary-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105;
+    box-shadow: var(--shadow-glow);
+  }
+
+  .btn-accent {
+    @apply bg-gradient-to-r from-accent to-accent-light text-accent-foreground px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105;
+    box-shadow: var(--shadow-accent-glow);
+  }
+
+  /* Reusable section spacing */
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  /* Glass utility for translucent panels on images */
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/15 rounded-xl;
+    box-shadow: var(--shadow-md);
+  }
+}
+
+@layer utilities {
+  /* Custom keyframes */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    70% {
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* Gradient utilities */
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .bg-gradient-accent {
+    background: var(--gradient-accent);
+  }
+
+  .bg-gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+
+  /* Subtle animated underline for links */
+  .link-underline {
+    position: relative;
+  }
+  .link-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 100%;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 200ms ease;
+    opacity: 0.6;
+  }
+  .link-underline:hover::after { transform: scaleX(1); }
+
+  /* Nicer, unobtrusive scrollbar */
+  .thin-scrollbar::-webkit-scrollbar { width: 10px; height: 10px; }
+  .thin-scrollbar::-webkit-scrollbar-track { background: transparent; }
+  .thin-scrollbar::-webkit-scrollbar-thumb { background: hsl(220 10% 80% / 0.6); border-radius: 999px; }
+  .thin-scrollbar::-webkit-scrollbar-thumb:hover { background: hsl(220 10% 70% / 0.8); }
+
+  /* Text shadows for readability on images */
+  .text-shadow { text-shadow: 0 1px 2px rgba(0,0,0,0.6); }
+  .text-shadow-lg { text-shadow: 0 2px 8px rgba(0,0,0,0.6); }
+}
