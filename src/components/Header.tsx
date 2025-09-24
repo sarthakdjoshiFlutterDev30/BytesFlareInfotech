@@ -109,7 +109,6 @@ const Header = () => {
                   <Mail className="h-4 w-4" />
                   <span>Contact Us Today</span>
                 </div>
-                //ONCLICK SEND TO CONTACT.TSX PAGE
                 <Button variant="hero" size="lg" className="w-full" onClick={() => window.location.href = "#contact"}>Get Quote</Button>
               </div>
             </nav>
