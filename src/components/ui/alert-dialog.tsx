@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as AlertDialogPrimitive from "@radix-ui/react-alert-dialog";
 
-import { buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "../../components/ui/button";
 
 export function cn(...classes: (string | undefined | false | null)[]) {
   return classes.filter(Boolean).join(" ");

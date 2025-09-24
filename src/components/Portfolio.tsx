@@ -1,6 +1,6 @@
 import { ExternalLink, Github, ArrowRight } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "../components/ui/card";
+import { Button } from "../components/ui/button";
 
 const Portfolio = () => {
   const projects = [
@@ -137,7 +137,7 @@ const Portfolio = () => {
 
         {/* Case Study CTA */}
         <div className="text-center">
-          <Card className="max-w-2xl mx-auto bg-gradient-primary text-white p-8">
+          <Card className="max-w-2xl mx-auto  text-white p-8">
             <CardContent className="p-0">
               <h3 className="text-2xl font-bold mb-4">
                 Want to See Detailed Case Studies?

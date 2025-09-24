@@ -13,15 +13,15 @@ All colors MUST be HSL for proper design token usage.
 
 @layer base {
   :root {
-    /* Brand Colors - Professional Tech Blue Palette */
+    /* Brand Colors - Professional Tech Blue Palette with Enhanced Contrast */
     --background: 0 0% 100%;
-    --foreground: 220 27% 8%;
+    --foreground: 220 27% 5%; /* Darker for better contrast */
 
     --card: 0 0% 100%;
-    --card-foreground: 220 27% 8%;
+    --card-foreground: 220 27% 5%; /* Darker for better contrast */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 27% 8%;
+    --popover-foreground: 220 27% 5%; /* Darker for better contrast */
 
     --primary: 214 100% 15%; /* Deep tech blue */
     --primary-foreground: 0 0% 100%;
@@ -29,10 +29,10 @@ All colors MUST be HSL for proper design token usage.
     --primary-dark: 214 100% 8%;
 
     --secondary: 220 15% 96%;
-    --secondary-foreground: 220 27% 15%;
+    --secondary-foreground: 220 27% 12%; /* Darker for better contrast */
 
     --muted: 220 15% 96%;
-    --muted-foreground: 220 9% 46%;
+    --muted-foreground: 220 9% 35%; /* Darker for better readability */
 
     --accent: 35 100% 55%; /* Innovation orange */
     --accent-foreground: 0 0% 100%;
@@ -83,6 +83,33 @@ All colors MUST be HSL for proper design token usage.
 
   body {
     @apply bg-background text-foreground font-[var(--font-body)];
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Enhanced paragraph and text styling */
+  p {
+    color: hsl(var(--foreground));
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+  
+  /* Better text rendering for small screens */
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px; /* Prevent zoom on iOS */
+      line-height: 1.6;
+    }
+    
+    h1 { font-size: 2rem; line-height: 1.2; }
+    h2 { font-size: 1.75rem; line-height: 1.3; }
+    h3 { font-size: 1.5rem; line-height: 1.4; }
+    
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
   }
 
   /* Improve text selection and default link styles */
@@ -94,10 +121,26 @@ All colors MUST be HSL for proper design token usage.
     @apply transition-colors duration-200;
   }
 
-  /* Headings: tighter tracking and stronger weights */
-  h1 { @apply font-[var(--font-heading)] font-extrabold tracking-tight; }
-  h2 { @apply font-[var(--font-heading)] font-bold tracking-tight; }
-  h3 { @apply font-[var(--font-heading)] font-semibold tracking-tight; }
+  /* Headings: tighter tracking and stronger weights with better contrast */
+  h1 { 
+    @apply font-[var(--font-heading)] font-extrabold tracking-tight;
+    color: hsl(var(--foreground));
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  h2 { 
+    @apply font-[var(--font-heading)] font-bold tracking-tight;
+    color: hsl(var(--foreground));
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  h3 { 
+    @apply font-[var(--font-heading)] font-semibold tracking-tight;
+    color: hsl(var(--foreground));
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  h4, h5, h6 {
+    @apply font-[var(--font-heading)] font-semibold tracking-tight;
+    color: hsl(var(--foreground));
+  }
 }
 
 @layer components {
@@ -243,7 +286,37 @@ All colors MUST be HSL for proper design token usage.
   .thin-scrollbar::-webkit-scrollbar-thumb { background: hsl(220 10% 80% / 0.6); border-radius: 999px; }
   .thin-scrollbar::-webkit-scrollbar-thumb:hover { background: hsl(220 10% 70% / 0.8); }
 
-  /* Text shadows for readability on images */
-  .text-shadow { text-shadow: 0 1px 2px rgba(0,0,0,0.6); }
-  .text-shadow-lg { text-shadow: 0 2px 8px rgba(0,0,0,0.6); }
+  /* Enhanced text shadows for better readability */
+  .text-shadow { 
+    text-shadow: 0 1px 3px rgba(0,0,0,0.7), 0 1px 2px rgba(0,0,0,0.4); 
+  }
+  .text-shadow-lg { 
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8), 0 1px 4px rgba(0,0,0,0.5); 
+  }
+  .text-shadow-xl { 
+    text-shadow: 0 4px 12px rgba(0,0,0,0.9), 0 2px 6px rgba(0,0,0,0.6); 
+  }
+  .text-shadow-white { 
+    text-shadow: 0 1px 3px rgba(255,255,255,0.8), 0 1px 2px rgba(255,255,255,0.5); 
+  }
+  
+  /* High contrast text utilities */
+  .text-high-contrast {
+    color: hsl(var(--foreground));
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-readable {
+    color: hsl(var(--foreground));
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+  }
+  
+  /* Enhanced focus states for accessibility */
+  .focus-visible-enhanced:focus-visible {
+    outline: 2px solid hsl(var(--accent));
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px hsl(var(--accent) / 0.2);
+  }
 }

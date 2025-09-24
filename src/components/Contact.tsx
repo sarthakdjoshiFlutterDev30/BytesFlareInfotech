@@ -1,8 +1,8 @@
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { Card, CardContent } from "../components/ui/card";
+import { Button } from "../components/ui/button";
+import { Input } from "../components/ui/input";
+import { Textarea } from "../components/ui/textarea";
 
 const Contact = () => {
   const contactInfo = [
@@ -57,7 +57,7 @@ const Contact = () => {
                 <Card key={index} className="border-border">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                      <div className="w-12 h-12  rounded-xl flex items-center justify-center flex-shrink-0">
                         <item.icon className="h-6 w-6 text-white" />
                       </div>
                       <div>
@@ -194,7 +194,7 @@ const Contact = () => {
 
         {/* CTA Section */}
         <div className="text-center mt-20">
-          <Card className="max-w-4xl mx-auto bg-gradient-primary text-white p-12">
+          <Card className="max-w-4xl mx-auto  text-white p-12">
             <CardContent className="p-0">
               <h3 className="text-3xl font-bold mb-4">
                 Ready to Transform Your Business?

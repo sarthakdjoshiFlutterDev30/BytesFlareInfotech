@@ -151,7 +151,7 @@ const Careers = () => {
                     </ul>
                   </div>
 
-                  <Button className="w-full" variant="outline">
+                  <Button className="w-full" variant="outline" onClick={() => window.open("mailto:byteflare.hr@gmail.com")}>
                     Apply Now
                   </Button>
                 </CardContent>
@@ -167,11 +167,11 @@ const Careers = () => {
             Send your resume and portfolio to our HR team. We'll review your application and get back to you within 48 hours.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="min-w-[200px]">
+            <Button size="lg" className="min-w-[200px]" onClick={() => window.open("mailto:byteflare.hr@gmail.com")}>
               Send Your Resume
             </Button>
             <div className="text-sm text-muted-foreground">
-              Email: <span className="text-foreground font-semibold">bytesflareinfotechsales@gmail.com</span>
+              Email: <span className="text-foreground font-semibold">byteflare.hr@gmail.com</span>
             </div>
           </div>
         </div>

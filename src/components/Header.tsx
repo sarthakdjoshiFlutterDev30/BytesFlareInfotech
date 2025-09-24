@@ -63,7 +63,14 @@ const Header = () => {
               <Mail className="h-4 w-4" />
               <span>Get Quote Today</span>
             </div>
-            <Button variant="hero" size="lg" className="text-white">Get Quote</Button>
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="text-white"
+              onClick={() => window.location.href = "#contact"}
+            >
+              Get Quote
+            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -94,7 +101,8 @@ const Header = () => {
                   <Mail className="h-4 w-4" />
                   <span>Contact Us Today</span>
                 </div>
-                <Button variant="hero" size="lg" className="w-full">Get Quote</Button>
+                //ONCLICK SEND TO CONTACT.TSX PAGE
+                <Button variant="hero" size="lg" className="w-full" onClick={() => window.location.href = "#contact"}>Get Quote</Button>
               </div>
             </nav>
           </div>

@@ -1,6 +1,6 @@
 import { Smartphone, Globe, Settings, TrendingUp, Cloud, Shield } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "../components/ui/card";
+import { Button } from "../components/ui/button";
 
 const Services = () => {
   const services = [
@@ -47,10 +47,10 @@ const Services = () => {
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 text-high-contrast">
             Our <span className="gradient-text">Services</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-foreground max-w-3xl mx-auto leading-relaxed text-readable font-medium">
             Comprehensive IT solutions tailored to transform your business and drive growth through innovative technology.
           </p>
         </div>
@@ -61,24 +61,24 @@ const Services = () => {
             <Card key={index} className="service-card bg-card border-border hover:border-primary/20 group">
               <CardContent className="p-8">
                 {/* Icon */}
-                <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16  rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <service.icon className="h-8 w-8 text-white" />
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-semibold text-foreground mb-4 group-hover:text-primary transition-colors">
+                <h3 className="text-xl font-semibold text-foreground mb-4 group-hover:text-primary transition-colors text-high-contrast">
                   {service.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-foreground mb-6 leading-relaxed text-readable">
                   {service.description}
                 </p>
 
                 {/* Features */}
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
+                    <li key={featureIndex} className="flex items-center text-sm text-foreground font-medium">
                       <div className="w-1.5 h-1.5 bg-accent rounded-full mr-3 flex-shrink-0"></div>
                       {feature}
                     </li>
@@ -91,7 +91,7 @@ const Services = () => {
 
         {/* CTA Section */}
         <div className="text-center mt-16">
-          <p className="text-lg text-muted-foreground mb-6">
+          <p className="text-lg text-foreground mb-6 text-readable font-medium">
             Ready to transform your business with our expert solutions?
           </p>
           <Button variant="accent">

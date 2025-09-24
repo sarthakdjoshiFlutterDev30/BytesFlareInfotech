@@ -22,15 +22,15 @@ const Hero = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 fade-in-up text-shadow-lg">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 fade-in-up ">
             Shaping Ideas into{" "}
-            <span className="bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent text-shadow-white">
               Digital Reality
             </span>
           </h1>
 
           {/* Subheading */}
-          <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl leading-relaxed fade-in-up text-shadow">
+          <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl leading-relaxed fade-in-up  font-medium">
             Dynamic startup specializing in mobile app development, 
             web development, ERP solutions, and digital transformation with fresh innovation.
           </p>

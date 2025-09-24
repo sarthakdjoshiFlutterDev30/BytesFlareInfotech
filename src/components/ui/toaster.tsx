@@ -1,5 +1,12 @@
-import React, { useContext } from "react";
-import { Toast, ToastClose, ToastDescription, ToastProvider, ToastTitle, ToastViewport } from "@/components/ui/toast";
+import * as React from "react";
+import {
+  Toast,
+  ToastClose,
+  ToastDescription,
+  ToastProvider,
+  ToastTitle,
+  ToastViewport,
+} from "../../components/ui/toast";
 
 type Toast = {
   id: string;
@@ -16,7 +23,7 @@ type ToastContextType = {
 const ToastContext = React.createContext<ToastContextType>({ toasts: [] });
 
 export function useToast() {
-  return useContext(ToastContext);
+  return React.useContext(ToastContext);
 }
 
 export function Toaster() {
