@@ -86,16 +86,17 @@ const Footer = () => {
             
             {/* Social Links */}
             <div className="flex space-x-4 mb-6">
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition-colors duration-200 text-white">
+              <a href="https://facebook.com/BytesFlareInfotech" target="_blank" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition-colors duration-200 text-white">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition-colors duration-200 text-white">
+
+              <a href="https://x.com/BytesF99635" target="_blank" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition-colors duration-200 text-white">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition-colors duration-200 text-white">
+              <a href="https://www.linkedin.com/company/bytesflareinfotech/ " target="_blank" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition-colors duration-200 text-white">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition-colors duration-200 text-white">
+              <a href="https://www.instagram.com/bytesflareinfotech/" target="_blank" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition-colors duration-200 text-white">
                 <Instagram className="h-5 w-5" />
               </a>
             </div>

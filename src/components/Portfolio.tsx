@@ -51,7 +51,33 @@ const Portfolio = () => {
       technologies: ["Flutter", "Node.js", "MongoDB", "Video Call API"],
       features: ["Appointment Booking", "Medical Records", "Telemedicine", "Prescription Management"],
       status: "Recently Delivered"
+    },
+    {
+      title: "Fintech Mobile Wallet",
+      category: "Finance Solution",
+      description: "Secure digital wallet for transactions, bill payments, and peer-to-peer transfers with KYC integration.",
+      technologies: ["Flutter", "Firebase", "Razorpay", "Node.js"],
+      features: ["Wallet Recharge", "KYC Verification", "Bill Payments", "Transaction History"],
+      status: "In Development"
+    },
+    {
+      title: "Travel Booking Platform",
+      category: "Travel & Hospitality",
+      description: "End-to-end travel booking system with flight, hotel, and activity reservations integrated into one platform.",
+      technologies: ["React.js", "MongoDB", "Node.js", "Stripe API"],
+      features: ["Flight Booking", "Hotel Reservations", "Activity Packages", "Payment Gateway"],
+      status: "Completed"
+    },
+    {
+      title: "Online Learning Platform",
+      category: "EdTech Solution",
+      description: "Interactive e-learning platform with live classes, recorded lectures, quizzes, and progress tracking for students.",
+      technologies: ["Flutter", "Firebase", "Node.js", "WebRTC"],
+      features: ["Live Classes", "Recorded Lectures", "Quizzes & Exams", "Student Progress Dashboard"],
+      status: "Recently Delivered"
     }
+    
+    
   ];
 
   return (
@@ -120,38 +146,12 @@ const Portfolio = () => {
                   </div>
                 </div>
 
-                {/* Action Buttons */}
-                <div className="flex gap-2 mt-auto">
-                  <Button variant="outline" size="sm" className="flex-1 text-xs">
-                    <ExternalLink className="w-3 h-3 mr-1" />
-                    View Details
-                  </Button>
-                  <Button variant="ghost" size="sm" className="px-3">
-                    <Github className="w-4 h-4" />
-                  </Button>
-                </div>
+               
               </CardContent>
             </Card>
           ))}
         </div>
 
-        {/* Case Study CTA */}
-        <div className="text-center">
-          <Card className="max-w-2xl mx-auto  text-white p-8">
-            <CardContent className="p-0">
-              <h3 className="text-2xl font-bold mb-4">
-                Want to See Detailed Case Studies?
-              </h3>
-              <p className="text-white/90 mb-6 leading-relaxed">
-                Get in-depth insights into our development process, challenges faced, and solutions implemented for each project.
-              </p>
-              <Button variant="accent" className="group">
-                View Case Studies
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
       </div>
     </section>
   );

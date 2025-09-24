@@ -53,7 +53,12 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 fade-in-up">
-            <Button variant="hero" size="lg" className="group">
+            <Button
+              variant="hero"
+              size="lg"
+              className="group"
+              onClick={() => { window.location.href = "#contact"; }}
+            >
               Start Your Project
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
@@ -61,6 +66,7 @@ const Hero = () => {
               variant="outline" 
               size="lg" 
               className="bg-white/10 border-white/30 text-white hover:bg-white/20 backdrop-blur-sm"
+              onClick={() => { window.location.href = "#portfolio"; }}
             >
               <Play className="mr-2 h-5 w-5" />
               View Our Work

@@ -5,6 +5,35 @@ import { MapPin, Clock, Users, TrendingUp, Code, Smartphone, Globe, Megaphone } 
 const Careers = () => {
   const jobOpenings = [
     {
+      title: "Business Development Executive",
+      type: "Full-time",
+      location: "Bhavnagar, Gujarat",
+      experience: "0-2 years",
+      description: "Drive business growth by generating leads, building client relationships, and expanding our market presence.",
+      requirements: [
+        "Excellent communication and negotiation skills",
+        "Lead generation and client acquisition",
+        "CRM management and reporting",
+        "Target-driven mindset"
+      ],
+      icon: <Users className="h-6 w-6" />
+    },
+    {
+      title: "SEO Executive",
+      type: "Full-time",
+      location: "Bhavnagar, Gujarat",
+      experience: "0-2 years",
+      description: "Optimize website content and improve search engine rankings to drive organic traffic and enhance online visibility.",
+      requirements: [
+        "Understanding of SEO tools (Google Analytics, SEMrush, Ahrefs)",
+        "Keyword research and on-page optimization",
+        "Content strategy and link building",
+        "Analytical skills and reporting"
+      ],
+      icon: <TrendingUp className="h-6 w-6" />
+    },
+    
+    {
       title: "Flutter Developer",
       type: "Full-time",
       location: "Bhavnagar, Gujarat",
