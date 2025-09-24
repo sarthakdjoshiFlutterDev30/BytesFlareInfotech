@@ -7,7 +7,6 @@ const Careers = () => {
     {
       title: "Business Development Executive",
       type: "Full-time",
-      location: "Bhavnagar, Gujarat",
       experience: "0-2 years",
       description: "Drive business growth by generating leads, building client relationships, and expanding our market presence.",
       requirements: [
@@ -21,7 +20,6 @@ const Careers = () => {
     {
       title: "SEO Executive",
       type: "Full-time",
-      location: "Bhavnagar, Gujarat",
       experience: "0-2 years",
       description: "Optimize website content and improve search engine rankings to drive organic traffic and enhance online visibility.",
       requirements: [
@@ -36,7 +34,6 @@ const Careers = () => {
     {
       title: "Flutter Developer",
       type: "Full-time",
-      location: "Bhavnagar, Gujarat",
       experience: "1-3 years",
       description: "Join our mobile development team to build innovative cross-platform applications using Flutter and Firebase.",
       requirements: ["Flutter/Dart proficiency", "Firebase integration", "UI/UX implementation", "Problem-solving skills"],
@@ -45,7 +42,6 @@ const Careers = () => {
     {
       title: "Web Developer", 
       type: "Full-time",
-      location: "Bhavnagar, Gujarat",
       experience: "1-2 years",
       description: "Create responsive websites and web applications using modern technologies like React, Node.js, and cloud services.",
       requirements: ["React/JavaScript", "Node.js basics", "Responsive design", "Version control (Git)"],
@@ -54,7 +50,6 @@ const Careers = () => {
     {
       title: "Full Stack Developer",
       type: "Full-time", 
-      location: "Bhavnagar, Gujarat",
       experience: "2-4 years",
       description: "Work on end-to-end solutions including frontend, backend, and database integration for our ERP and business solutions.",
       requirements: ["MERN/MEAN stack", "Database design", "API development", "ERP system knowledge"],
@@ -152,10 +147,6 @@ const Careers = () => {
                           <span className="inline-flex items-center space-x-1">
                             <Clock className="h-4 w-4" />
                             <span>{job.type}</span>
-                          </span>
-                          <span className="inline-flex items-center space-x-1">
-                            <MapPin className="h-4 w-4" />
-                            <span>{job.location}</span>
                           </span>
                         </CardDescription>
                       </div>

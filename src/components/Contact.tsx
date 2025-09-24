@@ -22,7 +22,6 @@ const Contact = () => {
 
   const contactInfo = [
     { icon: Mail, title: "Email", details: "bytesflareinfotechsales@gmail.com", description: "Send us your project requirements" },
-    { icon: MapPin, title: "Location", details: "Bhavnagar, Gujarat, India", description: "Visit our office for consultation" },
     { icon: Phone, title: "Let's Connect", details: "Ready to discuss your project?", description: "Contact us through email or form" },
     { icon: Clock, title: "Business Hours", details: "Mon - Fri: 9:00 AM - 6:00 PM", description: "We're here to help you succeed" },
   ];
@@ -87,6 +86,7 @@ const Contact = () => {
                       <div>
                         <h4 className="font-semibold text-foreground mb-1">{item.title}</h4>
                         <p className="text-primary font-medium mb-1">{item.details}</p>
+                        
                         <p className="text-sm text-muted-foreground">{item.description}</p>
                       </div>
                     </div>

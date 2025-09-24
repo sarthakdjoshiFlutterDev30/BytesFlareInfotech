@@ -7,7 +7,6 @@ const Careers = () => {
     {
       title: "Flutter Developer",
       type: "Full-time",
-      location: "Bhavnagar, Gujarat",
       experience: "1-3 years",
       description: "Join our mobile development team to build innovative cross-platform applications using Flutter and Firebase.",
       requirements: ["Flutter/Dart proficiency", "Firebase integration", "UI/UX implementation", "Problem-solving skills"],
@@ -16,7 +15,6 @@ const Careers = () => {
     {
       title: "Web Developer", 
       type: "Full-time",
-      location: "Bhavnagar, Gujarat",
       experience: "1-2 years",
       description: "Create responsive websites and web applications using modern technologies like React, Node.js, and cloud services.",
       requirements: ["React/JavaScript", "Node.js basics", "Responsive design", "Version control (Git)"],
@@ -25,7 +23,6 @@ const Careers = () => {
     {
       title: "Full Stack Developer",
       type: "Full-time", 
-      location: "Bhavnagar, Gujarat",
       experience: "2-4 years",
       description: "Work on end-to-end solutions including frontend, backend, and database integration for our ERP and business solutions.",
       requirements: ["MERN/MEAN stack", "Database design", "API development", "ERP system knowledge"],

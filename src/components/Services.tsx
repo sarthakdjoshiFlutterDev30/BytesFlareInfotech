@@ -89,16 +89,7 @@ const Services = () => {
           ))}
         </div>
 
-        {/* CTA Section */}
-        <div className="text-center mt-16">
-          <p className="text-lg text-foreground mb-6 text-readable font-medium">
-            Ready to transform your business with our expert solutions?
-          </p>
-          <Button variant="accent">
-            Get Free Consultation
-          </Button>
         </div>
-      </div>
     </section>
   );
 };
