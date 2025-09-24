@@ -57,7 +57,7 @@ const About = () => {
                 At Bytesflare Infotech, we're a dynamic startup specializing in creating comprehensive digital solutions that empower businesses to thrive in today's competitive landscape. Our expertise spans mobile app development, web development, ERP solutions, and digital transformation services.
               </p>
               <p>
-                Based in Bhavnagar, Gujarat, we've already delivered innovative solutions to clients across various industries, from educational institutions requiring sophisticated management systems to businesses seeking robust e-commerce platforms.
+                Based in , Gujarat, we've already delivered innovative solutions to clients across various industries, from educational institutions requiring sophisticated management systems to businesses seeking robust e-commerce platforms.
               </p>
               <p>
                 As an agile startup, our team combines fresh perspectives with technical excellence to deliver cutting-edge solutions that not only meet current needs but also scale with your business growth.

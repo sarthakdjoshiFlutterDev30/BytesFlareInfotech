@@ -35,11 +35,19 @@ const Header = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <h1 className={`text-2xl font-bold ${isScrolled ? "text-foreground" : "text-white"}`}>
-              Bytesflare Infotech
-            </h1>
-          </div>
+          <div className="flex-shrink-0 flex items-center space-x-3">
+  {/* Logo */}
+  <img
+    src="https://media.licdn.com/dms/image/v2/D4D0BAQFUe8m5d02Q-w/company-logo_200_200/B4DZih0WwyH4AI-/0/1755061515713?e=1761782400&v=beta&t=_0-_VaZpmgI_WctUBmcCSO3g90CEZqw9JDtydP2j9lk"
+    alt="Bytesflare Infotech"
+    className="h-16 w-16 object-contain"
+  />
+  
+  {/* Text */}
+  <h1 className={`text-2xl font-bold ${isScrolled ? "text-foreground" : "text-white"}`}>
+    Bytesflare Infotech
+  </h1>
+</div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:block">

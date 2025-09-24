@@ -58,7 +58,7 @@ const Careers = () => {
     {
       title: "Digital Marketing Intern",
       type: "Internship",
-      location: "Bhavnagar, Gujarat", 
+      location: ", Gujarat", 
       experience: "0-1 years",
       description: "Learn and contribute to our digital marketing efforts including SEO, social media, and content marketing.",
       requirements: ["Digital marketing basics", "Content creation", "Social media knowledge", "Analytical mindset"],

@@ -88,9 +88,34 @@ const Services = () => {
             </Card>
           ))}
         </div>
+        <div className="overflow-hidden mt-10">
+          <div
+            className="whitespace-nowrap animate-marquee text-lg font-semibold text-primary py-2"
+            style={{
+              animation: "marquee 30s linear infinite"
+            }}
+          >
+            Welcome to Bytesflare Infotech – We Build Amazing Mobile and Web Applications! &nbsp; 
+            Explore our services: Flutter App Development, Web Development, UI/UX Design, and Custom Software Solutions. &nbsp; 
+            Contact us today to turn your ideas into reality!
+          </div>
+        </div>
+        <style>
+          {`
+            @keyframes marquee {
+              0% { transform: translateX(100%); }
+              100% { transform: translateX(-100%); }
+            }
+            .animate-marquee {
+              display: inline-block;
+              min-width: 100%;
+            }
+          `}
+        </style>
 
         </div>
     </section>
+    
   );
 };
 
